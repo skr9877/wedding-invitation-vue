@@ -8,6 +8,7 @@
 - [x] `tsconfig.json` — @vue/tsconfig 기반으로 변경, jsx 제거
 - [x] `eslint.config.js` — react 플러그인 → eslint-plugin-vue
 - [x] `src/vite-env.d.ts` — SVG Vue 컴포넌트 타입 선언 추가
+- [x] `index.html` — 엔트리포인트 `/src/index.tsx` → `/src/main.ts` 변경
 
 ### 엔트리 포인트
 - [x] `src/main.ts` — createApp(App).mount('#root') (기존 index.tsx 대체)
@@ -23,37 +24,33 @@
   - focus trap, MutationObserver 포함
 - [x] `src/component/modal/Modal.vue` — 기존 Modal.tsx 변환
   - createPortal → `<Teleport to=".modals-wrapper">`
-  - `modalState: [boolean, setter]` → `v-model:open`
+  - `modalState: [boolean, setter]` → `v-model:open`ㄴ
 
 ### 공통 컴포넌트
 - [x] `src/component/button/Button.vue` — 기존 button/index.tsx 변환
 - [x] `src/component/lazyDiv/LazyDiv.vue` — 기존 lazyDiv/index.tsx 변환
 - [x] `src/component/bgEffect/BGEffect.vue` — 기존 bgEffect/index.tsx 변환
 
----
+### 컨텐츠 컴포넌트
+- [x] `src/component/cover/Cover.vue`
+- [x] `src/component/invitation/Invitation.vue`
+- [x] `src/component/calendar/Calendar.vue`
+- [x] `src/component/shareButton/ShareButton.vue`
+- [x] `src/component/location/Location.vue`
+- [x] `src/component/location/Map.vue`
 
-## 남은 작업
+### 복잡한 컴포넌트
+- [x] `src/component/gallery/Gallery.vue` (캐러셀 드래그 로직 포함)
+- [x] `src/component/information/Information.vue`
+- [x] `src/component/information/Attendance.vue`
+- [x] `src/component/information/AttendanceFormModal.vue`
+- [x] `src/component/guestbook/GuestBook.vue`
+- [x] `src/component/guestbook/WriteGuestBookModal.vue`
+- [x] `src/component/guestbook/GuestBookListModal.vue`
+- [x] `src/component/guestbook/DeleteGuestBookModal.vue`
 
-### 컨텐츠 컴포넌트 (미완료)
-- [ ] `src/component/cover/Cover.vue`
-- [ ] `src/component/invitation/Invitation.vue`
-- [ ] `src/component/calendar/Calendar.vue`
-- [ ] `src/component/shareButton/ShareButton.vue`
-- [ ] `src/component/location/Location.vue`
-- [ ] `src/component/location/Map.vue`
-
-### 복잡한 컴포넌트 (미완료)
-- [ ] `src/component/gallery/Gallery.vue` (캐러셀 드래그 로직 포함)
-- [ ] `src/component/information/Information.vue`
-- [ ] `src/component/information/Attendance.vue`
-- [ ] `src/component/information/AttendanceFormModal.vue`
-- [ ] `src/component/guestbook/GuestBook.vue`
-- [ ] `src/component/guestbook/WriteGuestBookModal.vue`
-- [ ] `src/component/guestbook/GuestBookListModal.vue`
-- [ ] `src/component/guestbook/DeleteGuestBookModal.vue`
-
-### 마무리 (미완료)
-- [ ] 기존 React 파일 삭제
+### 마무리
+- [x] 기존 React 파일 삭제
   - `src/index.tsx`
   - `src/App.tsx`
   - `src/component/store/context.ts`, `hook.ts`, `provider.tsx`
@@ -69,8 +66,10 @@
   - `src/component/information/index.tsx`, `attendance.tsx`
   - `src/component/guestbook/index.tsx`
   - `src/component/shareButton/index.tsx`
-- [ ] `npm install` 실행 (Vue 패키지 설치)
-- [ ] `npm run build` 로 빌드 검증
+- [x] `npm install` 실행 (Vue 패키지 설치)
+  - `@vitejs/plugin-vue` 버전 5→6 업그레이드 (vite 8 호환)
+  - `eslint-plugin-vue` 버전 9→10 업그레이드
+- [x] `npm run build` 로 빌드 검증 완료
 - [ ] `npm run dev` 로 동작 확인
 
 ---
@@ -92,6 +91,7 @@
 | SVG `?react` import | `vite-svg-loader` (suffix 없이 import) |
 | `modalState[1](true)` | `modalOpen.value = true` |
 | `modalState` prop | `v-model:open` |
+| `window.open()` in template | script 함수로 분리 후 호출 |
 
 ## Modal 사용법 변경
 
