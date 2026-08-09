@@ -75,8 +75,8 @@ src/
 
 ```bash
 # 1. 저장소 복제
-git clone https://github.com/juhonamnam/wedding-invitation.git
-cd wedding-invitation
+git clone https://github.com/skr9877/wedding-invitation-vue.git
+cd wedding-invitation-vue
 
 # 2. 의존성 설치
 npm install
@@ -162,6 +162,11 @@ npm run build   # build/ 디렉토리에 정적 파일 생성
 ---
 
 ## 업데이트 내역
+
+### 2026.08.09
+
+- 예식 일시를 2026년 11월 7일(토) 오후 2시로 설정
+- 예식 장소를 파티움하우스 수원 기준으로 설정 (지도 좌표, 네이버·카카오 지도 장소 ID 반영)
 
 ### 2025.10.07 — v0.1.1
 
