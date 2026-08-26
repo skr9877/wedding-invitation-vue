@@ -1,3 +1,7 @@
+button.guestbook-button {
+  font-size: 0.67rem;
+}
+
 .guestbook,
 .guestbook-list-modal {
   .post {
@@ -6,7 +10,7 @@
     background-color: var(--white-color);
     border-radius: 0.5rem;
     border: 1px solid var(--light-grey-color);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin-top: 0.2rem;
 
     .heading {
@@ -50,7 +54,7 @@
           margin-right: 0.5rem;
         }
         .date {
-          font-size: 0.8rem;
+          font-size: 0.6rem;
           opacity: 0.5;
         }
         margin-bottom: 0.8rem;
@@ -65,18 +69,19 @@
 
 .write-guestbook-modal {
   width: 22rem;
+  font-size: 0.8rem;
 
   .form {
     .header {
       .title-group {
         text-align: center;
         .title {
-          font-size: 1.2rem;
+          font-size: 0.8rem;
           color: var(--theme-color);
           padding: 0.5rem;
         }
         .subtitle {
-          font-size: 0.9rem;
+          font-size: 0.5rem;
         }
         padding-bottom: 1rem;
         border-bottom: 1px solid var(--dark-grey-color);
@@ -95,8 +100,8 @@
         margin-bottom: 0.5rem;
         border: 1px solid var(--light-grey-color);
         border-radius: 0.3rem;
-        font-family: "MapoGoldenPier";
-        font-size: 0.8rem;
+        font-family: "MaruBuri";
+        font-size: 0.4rem;
       }
 
       textarea {
@@ -104,8 +109,8 @@
         margin-bottom: 0.5rem;
         border: 1px solid var(--light-grey-color);
         border-radius: 0.3rem;
-        font-family: "MapoGoldenPier";
-        font-size: 0.8rem;
+        font-family: "MaruBuri";
+        font-size: 0.4rem;
       }
     }
 
@@ -114,6 +119,7 @@
       flex-direction: row;
       button {
         width: 100%;
+        font-size: 0.8rem;
       }
     }
   }
@@ -121,11 +127,12 @@
 
 .guestbook-list-modal {
   width: 24rem;
+  font-size: 0.8rem;
 
   .header {
     > .title {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       color: var(--theme-color);
       padding-bottom: 1rem;
     }
@@ -155,17 +162,21 @@
   .footer {
     display: flex;
     flex-direction: column;
+    button {
+      font-size: 0.8rem;
+    }
   }
 }
 
 .delete-guestbook-modal {
   width: 22rem;
+  font-size: 0.8rem;
 
   .form {
     .header {
       .title {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         color: var(--theme-color);
       }
     }
@@ -180,8 +191,8 @@
         margin-bottom: 0.5rem;
         border: 1px solid var(--light-grey-color);
         border-radius: 0.3rem;
-        font-family: "MapoGoldenPier";
-        font-size: 0.8rem;
+        font-family: "MaruBuri";
+        font-size: 0.4rem;
       }
     }
 
@@ -190,6 +201,7 @@
       flex-direction: row;
       button {
         width: 100%;
+        font-size: 0.8rem;
       }
     }
   }

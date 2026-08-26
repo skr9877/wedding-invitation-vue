@@ -22,7 +22,7 @@
   --white-color: #ffffff;
   --red-color: #ff0000;
 
-  font-family: "MapoGoldenPier";
+  font-family: "MaruBuri";
   font-size: 20px;
   @media (max-width: 500px) {
     font-size: 4vw;
@@ -74,7 +74,7 @@ $colors: (
 }
 
 button {
-  font-family: "MapoGoldenPier";
+  font-family: "MaruBuri";
   font-size: 1rem;
   border: none;
   background-color: transparent;
@@ -151,7 +151,7 @@ body {
         width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         position: relative;
 
         @media (max-width: 980px) {
@@ -200,11 +200,11 @@ body {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--theme-color);
   font-weight: normal;
   &.english {
-    font-family: "Allura";
+    font-family: "DeluxeEditionDemo";
   }
 }
 

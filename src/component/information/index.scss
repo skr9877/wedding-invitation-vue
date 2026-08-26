@@ -1,8 +1,12 @@
+button.attendance-button {
+  font-size: 0.67rem;
+}
+
 .information {
   .info-card {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 1.3rem 1rem 0.7rem 1rem;
 
     position: relative;
     border: 1px solid var(--alt-color);
@@ -16,21 +20,27 @@
       border-radius: 1rem;
       background-color: var(--alt-bg-color);
       border: 1px solid var(--alt-color);
+      font-size: 0.67rem;
     }
   }
   .content {
     line-height: 1.9;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+  }
+
+  .account-button {
+    font-size: 0.67rem;
   }
 }
 
 .donation-modal {
   width: 22rem;
+  font-size: 0.8rem;
 
   .header {
     .title {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       color: var(--theme-color);
       padding-bottom: 1rem;
       border-bottom: 1px solid var(--dark-grey-color);
@@ -53,7 +63,7 @@
         }
       }
       .copy-button {
-        font-size: 0.8rem;
+        font-size: 0.4rem;
         padding: 0.4rem 0.8rem;
       }
     }
@@ -62,17 +72,21 @@
   .footer {
     display: flex;
     flex-direction: column;
+    button {
+      font-size: 0.8rem;
+    }
   }
 }
 
 .attendance-form-modal {
   width: 22rem;
+  font-size: 0.8rem;
 
   .form {
     .header {
       .title {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         color: var(--theme-color);
         padding-bottom: 1rem;
         border-bottom: 1px solid var(--dark-grey-color);
@@ -132,8 +146,8 @@
           margin-bottom: 0.5rem;
           border: 1px solid var(--light-grey-color);
           border-radius: 0.3rem;
-          font-family: "MapoGoldenPier";
-          font-size: 0.8rem;
+          font-family: "MaruBuri";
+          font-size: 0.4rem;
         }
       }
     }
@@ -143,6 +157,7 @@
       flex-direction: row;
       button {
         width: 100%;
+        font-size: 0.8rem;
       }
     }
   }
@@ -150,11 +165,12 @@
 
 .attendance-info-modal {
   width: 22rem;
+  font-size: 0.8rem;
 
   .header {
     .title {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       color: var(--theme-color);
       padding-bottom: 1rem;
       border-bottom: 1px solid var(--dark-grey-color);
@@ -185,6 +201,9 @@
     flex-direction: row;
     button {
       width: 100%;
+      &:not(.attendance-button) {
+        font-size: 0.8rem;
+      }
     }
   }
 }

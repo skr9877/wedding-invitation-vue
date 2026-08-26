@@ -37,7 +37,8 @@ export const LOCATION = "파티움하우스 수원"
 /**
  * 예식 장소 상세 주소
  */
-export const LOCATION_ADDRESS = "경기 수원시 팔달구 효원로 289 파티움하우스 2층"
+export const LOCATION_ADDRESS =
+  "경기 수원시 팔달구 효원로 289 파티움하우스 2층 그레이스 캘리홀"
 
 /**
  * 카카오톡 공유 시 사용할 위치 정보 주소
@@ -70,7 +71,7 @@ export const KMAP_PLACE_ID = 1818839884
 // 신부 정보 설정
 export const BRIDE_FULLNAME = "김정안"
 export const BRIDE_FIRSTNAME = "정안"
-export const BRIDE_TITLE = "장녀"
+export const BRIDE_TITLE = "딸"
 export const BRIDE_FATHER = "김욱중"
 export const BRIDE_MOTHER = "한나겸"
 
@@ -81,27 +82,27 @@ export const BRIDE_INFO = [
   {
     relation: "신부",
     name: BRIDE_FULLNAME,
-    phone: "010-0000-0000",
-    account: "우리은행 0000000000000",
+    phone: "010-4007-7211",
+    account: "기업은행 643-020551-01-019",
   },
   {
     relation: "신부 아버지",
     name: BRIDE_FATHER,
-    phone: "010-0000-0000",
-    account: "하나은행 00000000000",
+    phone: "010-9484-7211",
+    account: "우리은행 299-025195-02-001",
   },
   {
     relation: "신부 어머니",
     name: BRIDE_MOTHER,
-    phone: "010-0000-0000",
-    account: "하나은행 00000000000000",
+    phone: "010-4789-7211",
+    account: "농협은행 299-025195-02-001",
   },
 ]
 
 // 신랑 정보 설정
 export const GROOM_FULLNAME = "김희석"
 export const GROOM_FIRSTNAME = "희석"
-export const GROOM_TITLE = "장남"
+export const GROOM_TITLE = "아들"
 export const GROOM_FATHER = "김우찬"
 export const GROOM_MOTHER = "신경례"
 
@@ -112,8 +113,8 @@ export const GROOM_INFO = [
   {
     relation: "신랑",
     name: GROOM_FULLNAME,
-    phone: "010-0000-0000",
-    account: "하나은행 00000000000000",
+    phone: "010-3167-7063",
+    account: "토스은행 1001-7713-8390",
   },
   {
     relation: "신랑 아버지",

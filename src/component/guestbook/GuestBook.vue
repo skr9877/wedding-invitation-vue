@@ -72,11 +72,18 @@ const openDeleteModal = async (postId: number) => {
     <div class="break" />
 
     <template v-if="SERVER_URL">
-      <Button @click="writeModalOpen = true">방명록 작성하기</Button>
+      <Button class="guestbook-button" @click="writeModalOpen = true"
+        >방명록 작성하기</Button
+      >
       <div class="break" />
     </template>
 
-    <Button @click="guestbookListModalOpen = true">방명록 전체보기</Button>
+    <Button
+      class="guestbook-button"
+      @click="guestbookListModalOpen = true"
+    >
+      방명록 전체보기
+    </Button>
   </LazyDiv>
 
   <Modal

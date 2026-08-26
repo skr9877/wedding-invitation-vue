@@ -30,13 +30,12 @@ const sendSms = (phone: string) => window.open(`sms:${phone}`, "_self")
 
     <div class="break" />
 
-    <div class="content">싱그러운 여름 향기 가득한 날</div>
-    <div class="content">소중한 분들을 모시고</div>
-    <div class="content">사랑의 약속을 하려고 합니다.</div>
-    <div class="break" />
-    <div class="content">햇살이 뜨거울 땐 가려주고,</div>
-    <div class="content">비가 오면 우산이 되어주는</div>
-    <div class="content">부부가 되겠습니다.</div>
+    <div class="content">삶의 <bold>희</bold>노애락을 속삭이는 부부라는 이름으로</div>
+    <div class="content">보<bold>석</bold>처럼 반짝이는 추억들을 한아름 안고</div>
+    <div class="content">끝없이 이어진 세월의 길을 다<bold>정</bold>히 걸어가려 합니다.</div>
+    <div class="content">서로의 거친 숨을 기다려주는 <bold>안</bold>온한 쉼이 되어주며</div>
+    <div class="content">'다름'이 '닮음'이 되어가는 사랑으로</div>
+    <div class="content">언제고 언제까지나 늘 함께임을 약속하려 합니다.</div>
     <div class="break" />
     <div class="content">기쁜날 함께 하시어</div>
     <div class="content">저희의 앞날을 축복해 주세요.</div>
@@ -60,7 +59,9 @@ const sendSms = (phone: string) => window.open(`sms:${phone}`, "_self")
 
     <div class="break" />
 
-    <Button @click="contactModalOpen = true">연락하기</Button>
+    <Button class="contact-button" @click="contactModalOpen = true"
+      >연락하기</Button
+    >
   </LazyDiv>
 
   <Modal
