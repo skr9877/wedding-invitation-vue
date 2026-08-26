@@ -80,11 +80,19 @@ const copyAccount = async (account: string) => {
 
       <div class="break" />
 
-      <Button style="width: 100%" @click="openDonationModal(true)">
+      <Button
+        class="account-button"
+        style="width: 100%"
+        @click="openDonationModal(true)"
+      >
         신랑측 계좌번호 보기
       </Button>
       <div class="break" />
-      <Button style="width: 100%" @click="openDonationModal(false)">
+      <Button
+        class="account-button"
+        style="width: 100%"
+        @click="openDonationModal(false)"
+      >
         신부측 계좌번호 보기
       </Button>
     </div>

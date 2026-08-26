@@ -1,13 +1,8 @@
 <script setup lang="ts">
-import {
-  BRIDE_FULLNAME,
-  GROOM_FULLNAME,
-  LOCATION,
-  WEDDING_DATE,
-  WEDDING_DATE_FORMAT,
-} from "../../const"
+import { BRIDE_FULLNAME, GROOM_FULLNAME, WEDDING_DATE } from "../../const"
 import { COVER_IMAGE } from "../../images"
 import LazyDiv from "../lazyDiv/LazyDiv.vue"
+import HeartIcon from "../../icons/heart-icon.svg"
 
 const DAY_OF_WEEK = [
   "Sunday",
@@ -38,10 +33,8 @@ const DAY_OF_WEEK = [
     <div class="subtitle">Save the date for the wedding of</div>
     <div class="names">
       {{ GROOM_FULLNAME }}
-      <div class="divider" />
+      <HeartIcon class="heart" />
       {{ BRIDE_FULLNAME }}
     </div>
-    <div class="info">{{ WEDDING_DATE.format(WEDDING_DATE_FORMAT) }}</div>
-    <div class="info">{{ LOCATION }}</div>
   </LazyDiv>
 </template>

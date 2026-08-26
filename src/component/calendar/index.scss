@@ -1,9 +1,17 @@
 .calendar {
+  .subtitle {
+    font-size: 1.4rem;
+    font-family: "DeluxeEditionDemo";
+    color: var(--alt-color);
+    margin-bottom: 0.3rem;
+  }
+
   .calendar-wrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     margin: 1rem;
     border: 1px solid var(--light-grey-color);
+    font-size: 0.8rem;
 
     > div {
       aspect-ratio: 1;
@@ -92,6 +100,12 @@
       margin-bottom: 1.5rem;
       .d-day {
         color: var(--theme-color);
+      }
+      .heart {
+        width: 0.8rem;
+        height: 0.8rem;
+        fill: var(--theme-color);
+        vertical-align: middle;
       }
     }
   }

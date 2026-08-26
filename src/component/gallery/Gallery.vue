@@ -284,7 +284,9 @@ onUnmounted(() => {
 
     <div class="break" />
 
-    <Button @click="modalOpen = true">사진 전체보기</Button>
+    <Button class="photo-list-button" @click="modalOpen = true"
+      >사진 전체보기</Button
+    >
   </LazyDiv>
 
   <Modal

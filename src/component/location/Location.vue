@@ -11,12 +11,12 @@ import { LOCATION, LOCATION_ADDRESS } from "../../const"
     <h2 class="english">Location</h2>
     <div class="addr">
       {{ LOCATION }}
-      <div class="detail">{{ LOCATION_ADDRESS }}</div>
+      <div class="detail">{{ LOCATION_ADDRESS.replace("289 ", "289\n") }}</div>
     </div>
     <Map />
   </LazyDiv>
 
-  <LazyDiv class="card location">
+  <LazyDiv class="card location transportation">
     <div class="location-info">
       <div class="transportation-icon-wrapper">
         <BusIcon class="transportation-icon" />
@@ -24,22 +24,18 @@ import { LOCATION, LOCATION_ADDRESS } from "../../const"
       <div class="heading">대중교통</div>
       <div />
       <div class="content">
-        * 지하철 이용시<br />
-        지하철 2호선 <b>낙성대역 4번출구</b> 나와서<br />
-        → 첫번째 골목 끼고 좌회전<br />
-        → 마을버스 <b>관악 02번</b> 승차<br />
-        → <b>서울대후문·연구공원 정류장</b> 하차<br />
-        → 길 건너 간판 참고해 도보로 100m 이동<br />
-        검은색 피라미드 유리 건물입니다.
+        * <b>지하철</b><br />
+        지하철 수인분당선 <b>수원시청역 10번출구</b>
       </div>
       <div />
       <div class="content">
-        * 버스 이용 시<br />
-        - 간선(파랑): 461, 641<br />
-        - 지선(초록): 5413, 5524, 5528<br />
-        반드시 <b>낙성대입구</b> 하차<br />
-        → 마을버스 <b>관악 02번</b> 이용<br />
-        이하 위와 동일합니다.
+        * <b>버&nbsp;&nbsp;&nbsp;스</b><br />
+        - 지선(초록): 13-1, 20-2, 92, 92-1, 99-2, 201, 202<br />
+        - 광역(빨강): 3002, 4000, 4500, 6800, 7200, 8002<br />
+        → 수원시청역 8,9번 출구 하차<br />
+
+        - 지선(초록): 11-1, 61, 80, 81, 82-1<br />
+        → 수원시청역 1,10번 출구 하차
       </div>
     </div>
 
@@ -51,15 +47,12 @@ import { LOCATION, LOCATION_ADDRESS } from "../../const"
       <div />
       <div class="content">
         네이버 지도, 카카오 네비, 티맵 등 이용<br />
-        <b>서울대학교 연구공원 웨딩홀</b> 검색<br />
-        - 주차 요금은 무료입니다.<br />
-        (주차장 이용 시 웨딩홀과 바로 연결)
+        <b>경인일보, 파비오더씨타, 경기아트센터</b> 검색<br />
       </div>
       <div />
       <div class="content">
         <b
-          >※ 서울대학교 정, 후문을 통과할 경우 통행료가 발생하므로
-          유의바랍니다. 낙성대 방향으로 이용해주세요.</b
+          >※ 웨딩홀 입구에서 주차요원 안내를 받고 이동하시기 바랍니다.</b
         >
       </div>
     </div>

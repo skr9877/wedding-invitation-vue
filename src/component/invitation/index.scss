@@ -1,16 +1,27 @@
+.invitation button.contact-button {
+  font-size: 0.67rem;
+}
+
 .invitation {
   .content {
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+
+    bold {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--theme-color);
+      -webkit-text-stroke: 0.4px currentColor;
+    }
   }
 
   .name {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     .relation {
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       opacity: 0.7;
 
       .relation-name {
@@ -23,17 +34,18 @@
 
 .contact-modal {
   width: 22rem;
+  font-size: 0.8rem;
 
   .header {
     .title-group {
       text-align: center;
       .title {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: var(--theme-color);
         padding: 0.5rem;
       }
       .subtitle {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
       }
       padding-bottom: 1rem;
       border-bottom: 1px solid var(--dark-grey-color);

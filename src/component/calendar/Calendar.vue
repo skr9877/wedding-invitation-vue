@@ -5,9 +5,9 @@ import {
   GROOM_FIRSTNAME,
   HOLIDAYS,
   WEDDING_DATE,
-  WEDDING_DATE_FORMAT,
 } from "../../const"
 import LazyDiv from "../lazyDiv/LazyDiv.vue"
+import HeartIcon from "../../icons/heart-icon.svg"
 
 const firstDayOfWeek = WEDDING_DATE.startOf("month").day()
 const daysInMonth = WEDDING_DATE.daysInMonth()
@@ -53,17 +53,18 @@ onUnmounted(() => {
 <template>
   <LazyDiv class="card calendar">
     <h2 class="english">The Wedding Day</h2>
+    <div class="subtitle">November 7th</div>
     <div class="break" />
-    {{ WEDDING_DATE.format(WEDDING_DATE_FORMAT) }}
+    11월
 
     <div class="calendar-wrapper">
-      <div class="head holiday"><span>Su</span></div>
-      <div class="head"><span>Mo</span></div>
-      <div class="head"><span>Tu</span></div>
-      <div class="head"><span>We</span></div>
-      <div class="head"><span>Th</span></div>
-      <div class="head"><span>Fr</span></div>
-      <div class="head"><span>Sa</span></div>
+      <div class="head holiday"><span>Sun</span></div>
+      <div class="head"><span>Mon</span></div>
+      <div class="head"><span>Tue</span></div>
+      <div class="head"><span>Wed</span></div>
+      <div class="head"><span>Thu</span></div>
+      <div class="head"><span>Fri</span></div>
+      <div class="head"><span>Sat</span></div>
 
       <div v-for="i in firstDayOfWeek" :key="`empty-${i}`" />
 
@@ -95,7 +96,8 @@ onUnmounted(() => {
         <div class="count">{{ diffs.seconds }}</div>
       </div>
       <div class="message">
-        {{ GROOM_FIRSTNAME }} &amp; {{ BRIDE_FIRSTNAME }}의 결혼식이
+        {{ GROOM_FIRSTNAME }} <HeartIcon class="heart" />
+        {{ BRIDE_FIRSTNAME }}의 결혼식이
         <template v-if="dayDiff > 0">
           <span class="d-day">{{ dayDiff }}</span
           >일 남았습니다.
