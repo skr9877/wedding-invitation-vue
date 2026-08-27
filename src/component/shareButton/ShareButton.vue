@@ -30,7 +30,7 @@ const share = () => {
         "//" +
         window.location.host +
         baseUrl +
-        "/preview_image.png",
+        "/preview_image_v2.png",
       link: {
         mobileWebUrl:
           window.location.protocol + "//" + window.location.host + baseUrl,
