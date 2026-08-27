@@ -8,7 +8,7 @@ const focusTrap = (e: KeyboardEvent) => {
   if (e.key !== "Tab") return
   const wrapper = wrapperRef.value
   if (!wrapper) return
-  const lastModal = wrapper.lastChild as HTMLElement
+  const lastModal = wrapper.lastElementChild as HTMLElement
   if (!lastModal) return
 
   const focusable = lastModal.querySelectorAll(
