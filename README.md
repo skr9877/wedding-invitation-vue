@@ -121,7 +121,7 @@ npm run dev
 
 - `src/images/cover.png` — 커버 이미지
 - `src/images/image1.png` ~ `image12.png` — 갤러리 이미지 (총 12장)
-- `public/preview_image.png` — 카카오톡 공유 시 미리보기 이미지
+- `public/preview_image_v2.png` — 카카오톡 공유 시 미리보기 이미지 (카카오 CDN 이미지 캐시 회피를 위해 파일명에 버전을 붙여둠. 이미지를 다시 교체할 땐 파일명을 바꾸고 `ShareButton.vue`, `index.html`의 참조도 함께 변경해야 캐시 문제를 피할 수 있음)
 
 > 원본 웨딩 사진은 고해상도인 경우가 많으므로 **가로·세로 1000px 내외**로 리사이징 후 교체를 권장합니다.
 
