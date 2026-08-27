@@ -6,6 +6,7 @@ import {
   GROOM_FULLNAME,
   LOCATION,
   WEDDING_DATE,
+  WEDDING_DATE_FORMAT,
 } from "../../const"
 import Button from "../button/Button.vue"
 import Modal from "../modal/Modal.vue"
@@ -67,7 +68,7 @@ onMounted(() => {
         <div class="wedding-info">
           <HeartIcon /> 신랑 {{ GROOM_FULLNAME }} &amp; 신부
           {{ BRIDE_FULLNAME }}<br />
-          <CalendarIcon /> {{ WEDDING_DATE.format() }}<br />
+          <CalendarIcon /> {{ WEDDING_DATE.format(WEDDING_DATE_FORMAT) }}<br />
           <MarkerIcon /> {{ LOCATION }}
         </div>
       </div>
