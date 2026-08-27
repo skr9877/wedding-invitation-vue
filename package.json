@@ -5,7 +5,7 @@
   "author": "Hee suk Kim <skr9877@gmail.com> (https://juhonamnam.github.io/)",
   "license": "MIT",
   "private": true,
-  "homepage": "https://github.com/skr9877/wedding-invitation-vue",
+  "homepage": "https://skr9877.github.io/wedding-invitation-vue",
   "type": "module",
   "scripts": {
     "dev": "vite",
