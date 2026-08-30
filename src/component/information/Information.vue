@@ -28,17 +28,6 @@ const copyAccount = async (account: string) => {
 <template>
   <template v-if="STATIC_ONLY">
     <LazyDiv class="card information">
-      <h2 class="english">Information</h2>
-      <div class="info-card">
-        <div class="label">식사 안내</div>
-        <div class="content">
-          식사시간: 12시 30분 ~ 14시 30분<br />
-          장소: 지하 1층 연회장
-        </div>
-      </div>
-    </LazyDiv>
-
-    <LazyDiv class="card information">
       <div class="info-card">
         <div class="label">마음 전하기</div>
         <div class="content">
@@ -62,13 +51,6 @@ const copyAccount = async (account: string) => {
 
   <LazyDiv v-else class="card information">
     <h2 class="english">Information</h2>
-    <div class="info-card">
-      <div class="label">식사 안내</div>
-      <div class="content">
-        식사시간: 12시 30분 ~ 14시 30분<br />
-        장소: 지하 1층 연회장
-      </div>
-    </div>
 
     <div class="info-card">
       <div class="label">마음 전하기</div>
