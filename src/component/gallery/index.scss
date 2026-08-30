@@ -126,6 +126,77 @@ button.photo-list-button {
   }
 }
 
+.lightbox-modal {
+  background-color: transparent;
+  padding-top: 0;
+
+  .close-button-wrapper {
+    padding: 0.5rem;
+    .close-button {
+      &::before,
+      &::after {
+        background-color: var(--light-color);
+      }
+    }
+  }
+
+  .lightbox-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 90vw;
+      max-height: 80vh;
+      width: auto;
+      height: auto;
+    }
+
+    .lightbox-control {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      pointer-events: none;
+
+      // 화살표 아이콘은 --dark-grey-color를 참조하므로,
+      // 사진 위에서도 잘 보이도록 이 영역에서만 밝은 색으로 덮어씀
+      --dark-grey-color: var(--light-color);
+
+      .control {
+        pointer-events: auto;
+        height: 100%;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &.left {
+          justify-content: flex-start;
+          padding-left: 0.5rem;
+        }
+        &.right {
+          justify-content: flex-end;
+          padding-right: 0.5rem;
+        }
+
+        .arrow {
+          width: 2rem;
+          filter: drop-shadow(0 0 0.15rem rgba(0, 0, 0, 0.6));
+          &.right {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}
+
 .all-photo-modal {
   width: 22rem;
   font-size: 0.8rem;

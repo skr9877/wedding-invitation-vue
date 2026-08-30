@@ -24,6 +24,8 @@ type DragOption = {
 }
 
 const modalOpen = ref(false)
+const lightboxOpen = ref(false)
+const lightboxIndex = ref(0)
 const carouselRef = ref<HTMLDivElement | null>(null)
 const slide = ref(0)
 const status = ref<Status>("stationary")
@@ -192,6 +194,15 @@ const onIndicatorClick = (dstIdx: number) => {
   move(slide.value, dstIdx)
 }
 
+const showPrevInLightbox = () => {
+  lightboxIndex.value =
+    (lightboxIndex.value + GALLERY_IMAGES.length - 1) % GALLERY_IMAGES.length
+}
+
+const showNextInLightbox = () => {
+  lightboxIndex.value = (lightboxIndex.value + 1) % GALLERY_IMAGES.length
+}
+
 onMounted(() => {
   GALLERY_IMAGES.forEach((image) => {
     const img = new Image()
@@ -308,10 +319,9 @@ onUnmounted(() => {
           :draggable="false"
           @click="
             () => {
-              if (status === 'stationary') {
-                if (idx !== slide) move(slide, idx)
-                modalOpen = false
-              }
+              lightboxIndex = idx
+              lightboxOpen = true
+              modalOpen = false
             }
           "
         />
@@ -326,6 +336,28 @@ onUnmounted(() => {
       >
         닫기
       </Button>
+    </div>
+  </Modal>
+
+  <Modal
+    v-model:open="lightboxOpen"
+    modal-class="lightbox-modal"
+    :close-on-click-background="true"
+  >
+    <div class="lightbox-content">
+      <img
+        :src="GALLERY_IMAGES[lightboxIndex]"
+        :alt="`${lightboxIndex}`"
+        :draggable="false"
+      />
+      <div class="lightbox-control">
+        <div class="control left" @click="showPrevInLightbox">
+          <ArrowLeft class="arrow" />
+        </div>
+        <div class="control right" @click="showNextInLightbox">
+          <ArrowLeft class="arrow right" />
+        </div>
+      </div>
     </div>
   </Modal>
 </template>
