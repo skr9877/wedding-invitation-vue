@@ -66,7 +66,7 @@ onMounted(() => {
           정성껏 준비하겠습니다.
         </div>
         <div class="wedding-info">
-          <HeartIcon /> 신랑 {{ GROOM_FULLNAME }} &amp; 신부
+          <HeartIcon class="heart" /> 신랑 {{ GROOM_FULLNAME }} &amp; 신부
           {{ BRIDE_FULLNAME }}<br />
           <CalendarIcon /> {{ WEDDING_DATE.format(WEDDING_DATE_FORMAT) }}<br />
           <MarkerIcon /> {{ LOCATION }}
